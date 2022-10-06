@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut ico" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="load" id="load">
+        <img src="/img/loadcoffee.gif" alt="" class="load-gif">
+    </div>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav-logo">
+                <img src="img/logo.png" alt="" class="nav-logo-img">
+                Kahvem.
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active-link">Anasayfa</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Ürünler</a></li>
+                    <li class="nav-item"><a href="#premium" class="nav-link">Vip Ürün</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class='bx bxs-exit'></i>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bxs-grid'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home grid" id="home">
+            <div class="home-container">
+                <div class="home-content container">
+                    <h1 class="home-title">
+                        En sevdiğiniz kahveyi seçin ve keyfinize bakın <span>!</span>
+                    </h1>
+                    <p class="home-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="home-data">
+                        <div class="home-data-group">
+                            <h2 class="home-data-number">17K</h2>
+                            <h3 class="home-data-title">Referans</h3>
+                            <p class="home-data-desc">Bize güvenen çeşitli müşterşilerimizin referansları.</p>
+                        </div>
+                        <div class="home-data-group">
+                            <h2 class="home-data-number">29K</h2>
+                            <h3 class="home-data-title">Vip Ürün</h3>
+                            <p class="home-data-desc">Kaliteli kahve çekirdekleri ile birlikte mükemmel sunumlar.</p>
+                        </div>
+                    </div>
+                    <a href="#special">
+                        <img src="/img/scroll.png" alt="" class="home-scroll">
+                    </a>
+                </div>
+            </div>
+            <img src="/img/home.png" alt="" class="home-img">
+        </section>
+
+        <div class="special section container" id="special">
+            <div class="special-container">
+                <div class="special-box">
+                    <h2 class="section-title">
+                        Spesiyal kahvelerimiz tam damak tadına uygun olarak hazırlanacak ve seni neşelendirecek!
+                    </h2>
+
+                    <div>
+                        <a href="#" class="button special-button">Daha Fazlası</a>
+                    </div>
+                </div>
+                <div class="special-category">
+                    <div class="special-group special-line">
+                        <img src="/img/specialty1.png" alt="" class="special-img">
+                        <h3 class="special-title">Seçilmiş Kahve!</h3>
+                        <p class="special-desc">En iyi kahve çekirdeklerini özenle seçiyoruz</p>
+                    </div>
+                    <div class="special-group special-line">
+                        <img src="/img/specialty2.png" alt="" class="special-img">
+                        <h3 class="special-title">Mükemmel Kurabiyeler</h3>
+                        <p class="special-desc">Kahvenizin yanında bir de mükemmel kurabiyeler veriyoruz!</p>
+                    </div>
+                    <div class="special-group">
+                        <img src="/img/specialty3.png" alt="" class="special-img">
+                        <h3 class="special-title">Sunumlar</h3>
+                        <p class="special-desc">Ve kahvemizi sizlere en özenli şekilde sunuryoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="products section" id="products">
+            <div class="products-container container">
+                <h2 class="section-title">
+                    En güzel ve en iyi ürünleri seçin
+                </h2>
+                <ul class="products-filters">
+                    <li class="products-item products-line active-product" data-filter=".delicacies">
+                        <h3 class="products-title">Yeni Tatlar</h3>
+                        <span class="product-stock">3 adet ürün</span>
+                    </li>
+                    <li class="products-item products-line" data-filter=".coffee">
+                        <h3 class="products-title">Sıcak Kahve</h3>
+                        <span class="product-stock">4 adet ürün</span>
+                    </li>
+                    <li class="products-item" data-filter=".cake">
+                        <h3 class="products-title">Kekler ve Yeni Lezzetler</h3>
+                        <span class="product-stock">4 adet ürün</span>
+                    </li>
+                </ul>
+                <div class="prodcuts-content grid">
+                    <article class="products-card delicacies">
+                        <div class="products-shape">
+                            <img src="/img/delicacies1.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">10TL</h2>
+                            <h3 class="products-name">Çikolatalı Kurabiye</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products-card delicacies">
+                        <div class="products-shape">
+                            <img src="/img/delicacies2.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">12TL</h2>
+                            <h3 class="products-name">Kruvasan</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products-card delicacies">
+                        <div class="products-shape">
+                            <img src="/img/delicacies3.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">8TL</h2>
+                            <h3 class="products-name">Kruvasan</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                
+                    <article class="products-card coffee">
+                        <div class="products-shape">
+                            <img src="/img/coffee1.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">20TL</h2>
+                            <h3 class="products-name">Filtre Kahve</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products-card coffee">
+                        <div class="products-shape">
+                            <img src="/img/coffee2.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">24TL</h2>
+                            <h3 class="products-name">Sütlü Filtre Kahve</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products-card coffee">
+                        <div class="products-shape">
+                            <img src="/img/coffee3.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">22TL</h2>
+                            <h3 class="products-name">Sütlü Latte</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products-card coffee">
+                        <div class="products-shape">
+                            <img src="/img/coffee4.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">22TL</h2>
+                            <h3 class="products-name">Moccha</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products-card cake">
+                        <div class="products-shape">
+                            <img src="/img/cake1.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">18TL</h2>
+                            <h3 class="products-name">Vişneli Pasta</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products-card cake">
+                        <div class="products-shape">
+                            <img src="/img/cake2.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">15TL</h2>
+                            <h3 class="products-name">Çikolata Soslu Kruvasan</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products-card cake">
+                        <div class="products-shape">
+                            <img src="/img/cake3.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">28TL</h2>
+                            <h3 class="products-name">Pankek</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products-card cake">
+                        <div class="products-shape">
+                            <img src="/img/cake4.png" alt="" class="products-img">
+                        </div>
+                        <div class="products-data">
+                            <h2 class="products-price">24TL</h2>
+                            <h3 class="products-name">Sütlü Pasta</h3>
+                            <button class="button products-button">
+                                <i class='bx bxs-shopping-bags'></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality section" id="premium">
+            <div class="quality-container container">
+                <h2 class="section-title">Sizler için en iyi kalite de kahveler hazırlıyoruz.</h2>
+
+                <div class="quality-content grid">
+                    <div class="quality-images">
+                        <img src="/img/quality1.png" alt="" class="quality-img-big">
+                        <img src="/img/quality2.png" alt="" class="quality-img-small">
+                    </div>
+
+                    <div class="quality-data">
+                        <h1 class="quality-title">VIP Kahve</h1>
+                        <h2 class="quality-price">79.90TL</h2>
+                        <span class="quality-special">Özel Fiyatlar!</span>
+                        <p class="quality-desc">Evde, işte, çalışırken dinlenirken, en iyi kahveleri deneyimlemek için VIP kahvemizi deneyin özel fiyatlandırmamızı kaçırmayın! </p>
+                        <div class="quality-buttons">
+                            <button class="button">
+                                Hemen Al!
+                            </button>
+                            <a href="" class="quality-button">
+                                Daha Fazlası
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logo section">
+            <div class="logo-container container grid">
+                <img src="/img/logocoffee1.png" alt="" class="logo-img">
+                <img src="/img/logocoffee2.png" alt="" class="logo-img">
+                <img src="/img/logocoffee3.png" alt="" class="logo-img">
+                <img src="/img/logocoffee4.png" alt="" class="logo-img">
+                <img src="/img/logocoffee5.png" alt="" class="logo-img">
+            </div>
+        </section>
+
+        <section class="blog section" id="blog">
+            <div class="blog-container container">
+                <h2 class="section-title">
+                    Bu hafta kahvemiz ile trend olan yazılarımız!
+                </h2>
+                <div class="blog-content grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="/img/blog1.png" alt="" class="blog-img">
+                            <a href="#" class="blog-button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                        <div class="blog-data">
+                            <h2 class="blog-title">10 Kahve Önerisi</h2>
+                            <p class="blog-desc">
+                                Bu yazılar sizlere kahveler hakkında bilgi vericek, nasıl hazırlandığını anlatmakta yardımcı olacaktır.
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-reaction">
+                                    <i class='bx bx-comment'></i>
+                                    <span>12</span>
+                                </div>
+                                <div class="blog-reaction">
+                                    <i class='bx bx-show' ></i>
+                                    <span>1,4K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="/img/blog2.png" alt="" class="blog-img">
+                            <a href="#" class="blog-button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                        <div class="blog-data">
+                            <h2 class="blog-title">
+                                Kahve içmenin faydaları
+                            </h2>
+                            <p class="blog-desc">
+                                Bu yazımızda kahve içmenin faydalarına değindik!
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-reaction">
+                                    <i class='bx bx-comment'></i>
+                                    <span>45</span>
+                                </div>
+                                <div class="blog-reaction">
+                                    <i class='bx bx-show' ></i>
+                                    <span>3.7K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <h1 class="footer-title">Kahvem.</h1>
+            <div class="footer-content grid">
+                <div class="footer-data">
+                    <p class="footer-desc">Haber kanalımıza abone ol!</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Email Adresinizi Girin" class="footer-input">
+                        <button class="footer-button">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer-data">
+                    <h2 class="footer-subtitle">Adres</h2>
+                    <p class="footer-info">İstanbul, Çekmeköy</p>
+                    <img src="/img/footerflag1.png" alt="" class="footer-flag">
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-subtitle">İletişim</h2>
+                    <p class="footer-info">+90 216 000 00 <br>
+                    kahvem@email.com</p>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-subtitle">İşyeri</h2>
+                    <p class="footer-info">Pazartesi - Pazar <br> 07:00 - 23:00 </p>
+                </div>
+            </div>
+
+            <div class="footer-group">
+                <ul class="footer-social">
+                    <a href="" class="footer-social-link"> <i class='bx bxl-facebook' ></i></a>
+                    <a href="" class="footer-social-link"> <i class='bx bxl-instagram' ></i></a>
+                    <a href="" class="footer-social-link"> <i class='bx bxl-twitter' ></i></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a href="" class="scrollup" id="scroll-up">
+        <i class='bx bx-chevrons-up'></i>
+    </a>
+
+    <script src="mixitup.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
